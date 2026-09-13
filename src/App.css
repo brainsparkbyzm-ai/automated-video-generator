@@ -1,0 +1,173 @@
+/* ==============================
+   GLOBAL RESET
+============================== */
+
+*{
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  min-height:100%;
+  margin:0;
+  padding:0;
+}
+
+
+body{
+  background:#111827;
+  color:white;
+  font-family:Arial, sans-serif;
+
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+
+/* ==============================
+   APP CONTAINER
+============================== */
+
+.app{
+
+  width:100%;
+
+  min-height:100vh;
+
+  height:auto;
+
+  display:flex;
+
+  flex-direction:column;
+
+}
+
+
+/* ==============================
+   MAIN LAYOUT
+============================== */
+
+
+.app-layout{
+
+  display:flex;
+
+  width:100%;
+
+  min-height:100vh;
+
+  height:auto;
+
+  background:#020617;
+
+}
+
+
+/* ==============================
+   PAGE CONTENT
+============================== */
+
+
+.page-content{
+
+  flex:1;
+
+  width:100%;
+
+  min-height:100vh;
+
+  height:auto;
+
+  padding:30px;
+
+  overflow:visible;
+
+}
+
+
+/* ==============================
+   MAIN SCROLL FIX
+============================== */
+
+
+main{
+
+  min-height:100vh;
+
+  height:auto;
+
+  overflow:visible;
+
+}
+
+
+/* ==============================
+   INPUTS
+============================== */
+
+
+input{
+
+  width:350px;
+
+  max-width:100%;
+
+  padding:12px;
+
+  border-radius:8px;
+
+  border:none;
+
+  font-size:16px;
+
+}
+
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+
+button{
+
+  padding:12px 30px;
+
+  border:none;
+
+  border-radius:8px;
+
+  background:#2563eb;
+
+  color:white;
+
+  font-size:16px;
+
+  cursor:pointer;
+
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+
+@media(max-width:768px){
+
+.page-content{
+
+padding:15px;
+
+}
+
+
+input{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,318 @@
+.script-page{
+padding:30px;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.script-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.script-header h1{
+margin:0;
+font-size:32px;
+color:#fff;
+}
+
+.script-header p{
+margin-top:8px;
+color:#94a3b8;
+font-size:15px;
+}
+
+.credit-card{
+min-width:180px;
+padding:20px;
+border-radius:18px;
+background:#0f172a;
+border:1px solid #1e293b;
+text-align:center;
+}
+
+.credit-card h2{
+margin:0;
+font-size:34px;
+color:#3b82f6;
+}
+
+.credit-card span{
+display:block;
+margin-top:8px;
+color:#94a3b8;
+}
+
+.script-card{
+background:#0f172a;
+border:1px solid #1e293b;
+border-radius:18px;
+padding:25px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.input-group{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.input-group label{
+color:#fff;
+font-weight:600;
+}
+.input-group select{
+width:100%;
+padding:14px;
+border:none;
+outline:none;
+border-radius:12px;
+background:#111827;
+color:#fff;
+font-size:15px;
+border:1px solid #374151;
+}
+
+.input-group textarea{
+width:100%;
+padding:16px;
+border:none;
+outline:none;
+resize:vertical;
+border-radius:12px;
+background:#111827;
+color:#fff;
+font-size:15px;
+border:1px solid #374151;
+box-sizing:border-box;
+min-height:180px;
+}
+
+.generate-btn{
+padding:16px;
+border:none;
+border-radius:12px;
+background:#2563eb;
+color:#fff;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.generate-btn:hover{
+background:#1d4ed8;
+}
+
+.generate-btn:disabled{
+opacity:.6;
+cursor:not-allowed;
+}
+
+.result-card{
+margin-top:10px;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.result-card h2{
+margin:0;
+color:#fff;
+font-size:22px;
+}
+
+.result-card textarea{
+width:100%;
+padding:18px;
+border:none;
+outline:none;
+resize:vertical;
+border-radius:12px;
+background:#111827;
+color:#fff;
+border:1px solid #374151;
+box-sizing:border-box;
+min-height:350px;
+}
+.result-actions{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.result-actions button{
+padding:12px 20px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:#fff;
+font-size:14px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.result-actions button:hover{
+background:#1d4ed8;
+}
+
+.favorites-card{
+margin-top:30px;
+padding:25px;
+background:#0f172a;
+border:1px solid #1e293b;
+border-radius:18px;
+}
+
+.favorites-card h2{
+margin:0 0 20px;
+color:#fff;
+}
+
+.favorite-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:16px;
+margin-bottom:15px;
+background:#111827;
+border-radius:12px;
+border:1px solid #1f2937;
+}
+
+.favorite-item h4{
+margin:0;
+color:#fff;
+}
+
+.favorite-item span{
+display:block;
+margin-top:6px;
+color:#94a3b8;
+font-size:14px;
+}
+
+.favorite-actions{
+display:flex;
+gap:10px;
+}
+
+.favorite-actions button{
+padding:10px 16px;
+border:none;
+border-radius:10px;
+background:#2563eb;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+}
+
+.favorite-actions button:hover{
+background:#1d4ed8;
+}
+
+.stats-card{
+margin-top:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.stat-box{
+padding:22px;
+background:#0f172a;
+border:1px solid #1e293b;
+border-radius:18px;
+text-align:center;
+}
+
+.stat-box h3{
+margin:0;
+font-size:30px;
+color:#3b82f6;
+}
+
+.stat-box span{
+display:block;
+margin-top:10px;
+color:#94a3b8;
+}
+.script-page *{
+box-sizing:border-box;
+}
+
+button{
+font-family:inherit;
+}
+
+select,
+textarea,
+button{
+transition:.3s;
+}
+
+select:focus,
+textarea:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 3px rgba(37,99,235,.2);
+}
+
+@media(max-width:900px){
+
+.script-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.credit-card{
+width:100%;
+}
+
+.favorite-item{
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+}
+
+.favorite-actions{
+width:100%;
+}
+
+.favorite-actions button{
+flex:1;
+}
+
+.result-actions{
+flex-direction:column;
+}
+
+.result-actions button{
+width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.script-page{
+padding:20px;
+}
+
+.script-header h1{
+font-size:26px;
+}
+
+.script-card{
+padding:18px;
+}
+
+.stats-card{
+grid-template-columns:1fr;
+}
+
+}
